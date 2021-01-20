@@ -1,0 +1,17 @@
+version: "3.5"
+
+services:
+  skeleton:
+    image: tianon/true
+    container_name: infrastructure
+    networks:
+      - public
+      - proxy
+
+networks:
+  public:
+    name: public
+    driver: bridge
+  proxy:
+    name: proxy
+    driver: bridge
