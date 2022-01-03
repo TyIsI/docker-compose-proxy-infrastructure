@@ -3,9 +3,9 @@ version: "3.5"
 services:
   skeleton:
     networks:
-      - template
+      - NETWORK_NAME
 
 networks:
-  template:
-    name: template
+  NETWORK_NAME:
+    name: NETWORK_NAME
     driver: bridge
