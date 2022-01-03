@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  skeleton:
+    networks:
+      - mysql
+
+networks:
+  mysql:
+    name: mysql
+    driver: bridge

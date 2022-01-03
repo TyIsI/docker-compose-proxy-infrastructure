@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  skeleton:
+    networks:
+      - template
+
+networks:
+  template:
+    name: template
+    driver: bridge
