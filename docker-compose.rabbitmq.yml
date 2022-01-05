@@ -1,0 +1,11 @@
+version: "3.5"
+
+services:
+  skeleton:
+    networks:
+      - rabbitmq
+
+networks:
+  rabbitmq:
+    name: rabbitmq
+    driver: bridge
